@@ -36,17 +36,17 @@ Bootleg Bill's is an e-commerce site for niche mixed tape cassettes with music f
 Planning:
 We dedicated a lot of time to planning; we felt it important to dial in on getting the vision aligned in order to maximise efficieny once we started coding. We created a user flow, ERDs and wireframes to assist with this and then translated the broad plan in to detailed user stories, icebox and MVPs, in order to create a clear plan for moving forward. 
 ###### Trello
-![Trello board screenshot picture](/project-04-fe/public/trelloboard.png) (https://trello.com/b/qJ5YXS7L/project-four)
+![Trello board screenshot picture](https://i.imgur.com/NdOfvLC.png) [Trello board](https://trello.com/b/qJ5YXS7L/project-four)
 ###### ERD (Entity Relationship Diagrams)
-![ERD screenshot picture](/project-04-fe/public/ERD.png)
+![ERD screenshot picture](https://i.imgur.com/ii6CfsM.png)
 ###### User Flow
-![Wireframes pictures screenshot](/project-04-fe/public/userflow.png)
+![Wireframes pictures screenshot](https://i.imgur.com/T7kkjnS.png)
 ###### Wireframes
-![Wireframes pictures screenshot](/project-04-fe/public/wireframe1.png)
-![Wireframes pictures screenshot](/project-04-fe/public/wireframe2.png)
-![Wireframes pictures screenshot](/project-04-fe/public/wireframe3.png)
-![Wireframes pictures screenshot](/project-04-fe/public/wireframe4.png)
-![Wireframes pictures screenshot](/project-04-fe/public/wireframe5.png)
+![Wireframes pictures screenshot](https://i.imgur.com/qJR7UE8.png)
+![Wireframes pictures screenshot](https://i.imgur.com/eJXpLsL.png)
+![Wireframes pictures screenshot](https://i.imgur.com/KMv74hr.png)
+![Wireframes pictures screenshot](https://i.imgur.com/Fk33EoI.png)
+![Wireframes pictures screenshot](https://i.imgur.com/a5voxYU.png)
 
 ### Key Features
 - Responsive design for different screen sizes and/or mobile viewports
