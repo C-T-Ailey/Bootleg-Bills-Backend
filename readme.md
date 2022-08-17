@@ -56,9 +56,6 @@ We dedicated a significant portion of the project's start to planning; we felt i
 - Top 3 most popular products are displayed in a responsive carousel on the homepage to pique buyer interest and maximise user experience.
 - Seller dashboard which facilitates CRUD operations for products and order status.
 
-### Deployed application link
-[Heroku App](https://bootlegbills.herokuapp.com/index)
-
 ### Challenges
 - One of the biggest challenges was ensuring we were aligned as a group on the vision, maintaining good communication and regular code merging to ensure we were working as efficiently as possible towards our end goal.
 - It was challenging to figure out how to save entries to the database without submitting data via form, such as for the cart and the order form. We solved it by storing cart information as a state between adding to cart and checking out, but this has the downside of losing the cart data on refresh or loss of connectivity.
