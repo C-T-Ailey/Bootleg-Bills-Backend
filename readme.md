@@ -409,14 +409,6 @@ if(top3Products.length === 3) {
         </div>
         </div>
  
-        {/* <div className="test">
-  
-        <input className="search" id="search" placeholder="Enter Post Title" onChange={event => setQuery(event.target.value)} />
-          <div className="results">
-            {test}
-          </div>
-        </div> */}
- 
      </>
     )
   }
