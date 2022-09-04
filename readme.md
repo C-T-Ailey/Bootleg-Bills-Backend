@@ -4,7 +4,7 @@
 
 > *This repository contains the code for the project's backend. For the frontend code, see [here](https://github.com/C-T-Ailey/project-04-fe).*
 
-![bootlegbills](https://i.imgur.com/aQYEiM5.gif)
+![bootlegbills](https://i.imgur.com/X5cwrx5.png)
 
 #### Table of Contents
 * Introduction
