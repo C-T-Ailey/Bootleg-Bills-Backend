@@ -186,7 +186,7 @@ Allowing users to register as either a Buyer or Seller was an essential aspect o
 
 If the input code matches the one defined for verification, the newly registered instance of the User model will have its userType property set to “seller”.
 
-```html
+```jsx
 {/* Signup.js Seller Verification */}
  
 <Form.Group>
@@ -262,7 +262,7 @@ exports.auth_login_post = async (req, res) => {
 }
 ```
 
-```js
+```jsx
 {/* Frontend - App,js */}
  
 const loginHandler = (cred) => {
