@@ -35,6 +35,10 @@ const productSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    productMediaFormat: {
+        type: String,
+        required: true
+    },
     productSource: {
         type: String,
         maxlength: [100, "Creator name exceeds character limit"]

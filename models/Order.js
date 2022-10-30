@@ -19,6 +19,11 @@ const orderSchema = mongoose.Schema({
         required: true
     },
     paymentDetails: {
+        customerName: {
+            type: String,
+            required: true,
+            minLength: [5, 'Your cardholder name must be at least 5 characters.']
+        },
         cardNumber: {
             type: Number,
             required: true,
@@ -56,6 +61,10 @@ const orderSchema = mongoose.Schema({
         }
     },
     shippingAddress: {
+        customerEmail: {
+            type: String,
+            required: true
+        },
         lineOne: {
             type: String,
             required: true
