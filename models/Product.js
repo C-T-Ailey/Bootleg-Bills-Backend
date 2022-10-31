@@ -29,9 +29,13 @@ const productSchema = mongoose.Schema({
     },
     productImageUrls: [{
         type: String,
-        maxlength: [500, "Product description exceeds character limit"]
+        maxLength: [500, "Product description exceeds character limit"]
     }],
     productSourceType: {
+        type: String,
+        required: true
+    },
+    productMediaFormat: {
         type: String,
         required: true
     },
@@ -41,7 +45,15 @@ const productSchema = mongoose.Schema({
     },
     productAudio: {
         type: String,
-    }
+    },
+    hasVariant: {
+        type: Boolean,
+        required: true
+    },
+    productVariants: [{
+        type: String,
+        maxLength: [100, "Variant description must be 100 chars or less"] 
+    }]
 
 
 },
