@@ -28,13 +28,6 @@ app.use("/", newsLetterRouter);
 
 app.listen(PORT, () => console.log(`Backend running on port ${PORT}`));
 
-if (process.env.NODE_ENV === 'production') {
-    //*Set static folder up in production
-    app.use(express.static('client/build'));
-
-    app.get('*', (req,res) => res.sendFile(path.resolve(__dirname, 'client', 'build','index.html')));
-  }
-
 mongoose.connect(process.env.mongoDBURL,
     {useNewUrlParser: true,
         useUnifiedTopology: true},
