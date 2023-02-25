@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json())
 
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4000;
 
 const indexRouter = require("./routes/index")
 const aboutRouter = require("./routes/about")
