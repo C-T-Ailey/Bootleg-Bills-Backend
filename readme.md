@@ -7,7 +7,7 @@
 ![bootlegbills](https://i.imgur.com/X5cwrx5.png)
 
 #### Table of Contents
-* Current App Status
+* Latest Development Status
 * Introduction
   * Brief and Requirements
   * Project Overview
