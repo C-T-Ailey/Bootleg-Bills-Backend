@@ -29,7 +29,7 @@ const productSchema = mongoose.Schema({
     },
     productImageUrls: [{
         type: String,
-        maxLength: [500, "Product description exceeds character limit"]
+        maxLength: [500, "Product image URL exceeds character limit"]
     }],
     productSourceType: {
         type: String,
