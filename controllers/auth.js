@@ -53,14 +53,15 @@ exports.auth_login_post = async (req, res) => {
             user: {
                 id: user._id,
                 name: user.firstName,
-                role: user.userType
+                role: user.userType,
+                timestamp: new Date().valueOf()
             }
         }
 
         jwt.sign(
             payload,
             process.env.SECRET,
-            {expiresIn: "1h"},
+            {expiresIn: "30m"},
             (err, token) => {
                 if (err) throw err;
                 res.json({token}).status(200)
