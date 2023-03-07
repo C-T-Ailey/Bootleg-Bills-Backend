@@ -66,9 +66,12 @@ This specific repository is for the application's backend, which has remained la
 * A means of selecting which of a given product's images will be used as its "Bestseller" image.
 * Dedicated lower-resolution images to use as thumbnails on the Products page in order to reduce time and data spent loading them, and a corresponding field in the Product model to designate it.
 * Implement functional counters for each product's "Total orders" and "Outstanding orders" metrics on the Seller dashboard.
+* Implement conditionals to hide the audio player on products without audio samples.
 
 #### Known Bugs
-* The primary font for the site, Bungee Hairline, displays poorly in the Firefox browser.
+* Firefox Browser-specific issues:
+  * The primary font for the site, Bungee Hairline, displays poorly in the Firefox browser.
+  * The "Choose a Variant" dropdown selection options are displayed with the Comic Sans font, instead of the intended Bungee Hairline.
 * When attempting to update the product details for a product which has variants, the "Has variants?" selection will default to "No". Attempting to modify details after encountering this bug will sometimes alter the details for a different product instead of the intended one - exact criteria for replicating this bug are unknown.
 * :warning: The "Bestsellers" carousel on the homepage briefly displays names and images for non-bestseller products as the function for populating the carousel runs its course.
   * Somewhat fixed - the carousel only briefly appears once before displaying the populated carousel. To be fully fixed shortly.
