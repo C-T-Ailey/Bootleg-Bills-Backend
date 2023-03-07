@@ -25,7 +25,7 @@ module.exports = (req, res, next) => {
         next();
     }
     catch(error){
-        console.log(error)
+        console.log("Token invalid:", error.response.data)
         return res.json({"message": "Your token is invalid."}).status(401)
     }
 }
