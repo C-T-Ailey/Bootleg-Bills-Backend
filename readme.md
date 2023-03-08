@@ -1,13 +1,14 @@
 # GA SEI Project 4: “Bootleg Bill’s Unofficial Audio Rarities” - Bootleg Mixtape E-Commerce App
 
-### Deployed App: https://bootleg-bills.herokuapp.com/
-
 > *This repository contains the code for the project's backend. For the frontend code, see [here](https://github.com/C-T-Ailey/project-04-fe).*
 
-**Note:** The project's frontend is configured to communicate with the deployed backend, currently hosted on Heroku, and the backend has CORS configured to allow communication with the deployed frontend. If you intend to host this project locally, you will need to reconfigure each API endpoint in the frontend to point to the localhost address of the backend, as well as one of the following CORS solutions:
+### Deployed App: https://bootleg-bills.herokuapp.com/
+* **Please note that this project is hosted using Heroku's "Eco" dynos. As such, it may take a few moments for both the frontend and backend to wake up before loading.**
+
+
+**Note:** The project's frontend is configured to communicate with the deployed backend, currently hosted on Heroku, and the backend has CORS configured to allow communication with the deployed frontend. If you intend to host this project locally, you will need to reconfigure each API endpoint in the frontend to point to the localhost address of the backend, as well as either of the following CORS solutions:
 * Use a CORS browser extension;
-* Adjust the CORS configuration in the backend's server.js file to reflect whichever localhost address the frontend will be running on;
-* Define a proxy in the frontend's package.json file pointing to the localhost address the backend will be running on. 
+* Adjust the CORS configuration in the backend's server.js file to reflect whichever localhost address the frontend will be running on.
 
 The backend also requires a .env file with the following keys:
 * `PORT=` (your choice of port)
