@@ -56,6 +56,12 @@ This specific repository is for the application's backend, which has remained la
 * Currently selected image on the Product Details modal view can now be clicked to open the full image in a new tab.
 * Full list of changes coming soon -- please see repository commit notes until such time.
 
+#### Post-Submission Additions and Changes
+* Alphabetical/Reverse Alphabetical and Date Added (ascending/descending) sorting to accompany the Source/Format filters on the Products page.
+* Implemented conditionals to hide the audio player on products without audio samples.
+* Currently selected image on the Product Details modal view can now be clicked to open the full image in a new tab.
+* Full list of changes coming soon -- please see repository commit notes until such time.
+
 #### Planned Improvements
 * :construction_worker: The majority of variables and functions are currently declared at the top level in App.js and passed as props to various components; refactor the codebase so more functions and props are employed only on their required pages to reduce memory usage.
   * In progress.
@@ -63,6 +69,8 @@ This specific repository is for the application's backend, which has remained la
   * In progress.
 * :construction_worker: Rewrite/update styling to make the site more responsive to mobile devices.
   * In progress - Homepage, Products and About Bill's now display adequately on mobile devices.
+* :construction_worker: Implement functional counters for each product's "Total orders" and "Outstanding orders" metrics on the Seller dashboard.
+  * Requires adjustments so counters renew when a product is updated without reloading the dashboard - also requires a significant loading period before orders and statistics are viewable.
 * Improved layout for the homepage.
 * Featured Product section on the homepage, with a component in the Seller dashboard for updating it.
 * Increased number of potential images and variants for products.
@@ -72,7 +80,9 @@ This specific repository is for the application's backend, which has remained la
 * Dedicated lower-resolution images to use as thumbnails on the Products page in order to reduce time and data spent loading them, and a corresponding field in the Product model to designate it.
 
 #### Known Bugs
-* The primary font for the site, Bungee Hairline, displays poorly in the Firefox browser.
+* Firefox Browser-specific issues:
+  * The primary font for the site, Bungee Hairline, displays poorly in the Firefox browser.
+  * The "Choose a Variant" dropdown selection options are displayed with the Comic Sans font, instead of the intended Bungee Hairline.
 * :warning: The "Bestsellers" carousel on the homepage briefly displays names and images for non-bestseller products as the function for populating the carousel runs its course.
   * Somewhat fixed - the carousel only briefly appears once before displaying the populated carousel. To be fully fixed shortly.
 * :white_check_mark: When attempting to update the product details for a product which has variants, the "Has variants?" selection will default to "No". Attempting to modify details after encountering this bug will sometimes alter the details for a different product instead of the intended one - exact criteria for replicating this bug are unknown.
