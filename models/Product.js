@@ -31,6 +31,10 @@ const productSchema = mongoose.Schema({
         type: String,
         maxLength: [500, "Product image URL exceeds character limit"]
     }],
+    productBestsellerImage: {
+        type: String,
+        maxLength: [500, "Bestseller image URL exceeds character limit"]
+    },
     productSourceType: {
         type: String,
         required: true
