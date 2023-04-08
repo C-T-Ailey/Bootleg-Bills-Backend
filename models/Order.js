@@ -14,6 +14,10 @@ const orderSchema = mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: "Cart"
     }],
+    userOrder: {
+        type: String,
+        ref: "Order"
+    },
     totalPrice: {
         type: Number,
         required: true
