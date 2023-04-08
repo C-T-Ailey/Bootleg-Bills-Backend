@@ -11,7 +11,8 @@ const orderSchema = mongoose.Schema({
         ref: "User"
     },
     cart: [{
-        type: mongoose.Schema.Types.ObjectId,
+        // type: mongoose.Schema.Types.ObjectId,
+        type: String,
         ref: "Cart"
     }],
     totalPrice: {
