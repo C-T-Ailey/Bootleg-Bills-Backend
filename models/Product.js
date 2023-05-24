@@ -57,7 +57,11 @@ const productSchema = mongoose.Schema({
     productVariants: [{
         type: String,
         maxLength: [100, "Variant description must be 100 chars or less"] 
-    }]
+    }],
+    unitsSold: {
+        type: Number,
+        default: 0
+    }
 
 
 },
