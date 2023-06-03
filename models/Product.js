@@ -19,7 +19,7 @@ const productSchema = mongoose.Schema({
     productDescription: {
         type: String,
         required: true,
-        maxlength: [600, "Product description exceeds character limit"]
+        maxlength: [1000, "Product description exceeds character limit (1000 chars)"]
 
     },
     productStock: {
@@ -29,11 +29,11 @@ const productSchema = mongoose.Schema({
     },
     productImageUrls: [{
         type: String,
-        maxLength: [500, "Product image URL exceeds character limit"]
+        maxLength: [500, "Product image URL exceeds character limit (500 chars)"]
     }],
     productBestsellerImage: {
         type: String,
-        maxLength: [500, "Bestseller image URL exceeds character limit"]
+        maxLength: [500, "Bestseller image URL exceeds character limit (500 chars)"]
     },
     productSourceType: {
         type: String,
@@ -45,10 +45,14 @@ const productSchema = mongoose.Schema({
     },
     productSource: {
         type: String,
-        maxlength: [100, "Creator name exceeds character limit"]
+        maxlength: [100, "Creator name exceeds character limit (100 chars)"]
     },
     productAudio: {
         type: String,
+    },
+    productSampleName: {
+        type: String,
+        maxLength: [100, "Audio sample name must be 100 characters or less"]
     },
     hasVariant: {
         type: Boolean,
