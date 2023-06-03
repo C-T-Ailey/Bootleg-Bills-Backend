@@ -54,6 +54,10 @@ const productSchema = mongoose.Schema({
         type: String,
         maxLength: [100, "Audio sample name must be 100 characters or less"]
     },
+    productSampleArtist: {
+        type: String,
+        maxLength: [100, "Audio sample artist name must be 100 characters or less"]
+    },
     hasVariant: {
         type: Boolean,
         required: true
