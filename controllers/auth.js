@@ -77,8 +77,26 @@ exports.auth_login_post = async (req, res) => {
 // POST token refresh
 
 exports.auth_session_refresh_post = async (req, res) => {
-    let token = req.body;
-    return res.json({token});
+    let userCreds = req.body;
+
+    const payload = {
+        user: {
+            id: userCreds._id,
+            name: userCreds.firstName,
+            role: userCreds.userType,
+            timestamp: new Date().valueOf()
+        }
+    }
+
+    jwt.sign(
+        payload,
+        process.env.SECRET,
+        {expiresIn: "1h"},
+        (err, token) => {
+            if (err) throw err;
+            res.json({token}).status(200)
+        }
+    )
 }
 
 // User GET - get all registered users
