@@ -13,8 +13,8 @@ router.get("/auth/users/detail", isLoggedIn, authCtrl.user_detail_get)
 router.post("/auth/signup", authCtrl.auth_signup_post);
 //router.get("/auth/login", authCtrl.auth_login_get);
 router.post("/auth/login", authCtrl.auth_login_post);
-router.post("auth/refresh", authCtrl.auth_session_refresh_post);
+router.post("/auth/refresh", authCtrl.auth_session_refresh_post);
 //router.get("/auth/logout", authCtrl.auth_logout_get);
-router.post("auth/changepass", authCtrl.auth_password_change);
+router.post("/auth/changepass", authCtrl.auth_password_change);
 
 module.exports = router;
