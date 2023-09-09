@@ -61,7 +61,7 @@ exports.auth_login_post = async (req, res) => {
         jwt.sign(
             payload,
             process.env.SECRET,
-            {expiresIn: "30m"},
+            {expiresIn: "1h"},
             (err, token) => {
                 if (err) throw err;
                 res.json({token}).status(200)
@@ -72,6 +72,13 @@ exports.auth_login_post = async (req, res) => {
         console.log(error);
         res.json({"message": "You are not logged in."}).status(400);
     }
+}
+
+// POST token refresh
+
+exports.auth_session_refresh_post = async (req, res) => {
+    let token = req.body;
+    return res.json({token});
 }
 
 // User GET - get all registered users
@@ -99,4 +106,10 @@ exports.user_detail_get = (req, res) => {
     .catch((err) => {
         console.log(err)
     })
+}
+
+// Password change POST
+
+exports.auth_password_change = async (req, res) => {
+    
 }
