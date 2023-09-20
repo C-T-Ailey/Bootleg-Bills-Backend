@@ -1,4 +1,4 @@
-# GA SEI Project 4: “Bootleg Bill’s Unofficial Audio Rarities” - Bootleg Mixtape E-Commerce App
+# GA SEI Project 4: “Bootleg Bill’s Unofficial Audio Rarities” - A Bootleg Record & Cassette E-Commerce App
 
 > *This repository contains the code for the project's backend. For the frontend code, see [here](https://github.com/C-T-Ailey/Bootleg-Bills-Frontend).*
 
