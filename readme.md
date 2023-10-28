@@ -2,7 +2,7 @@
 
 ### Deployed App: https://bootlegbills.herokuapp.com/
 
-> *This repository contains the code for the project's backend. For the frontend code, see [here](https://github.com/C-T-Ailey/project-04-fe).*
+> *This repository contains the code for the project's backend. For the frontend code, see [here](https://github.com/C-T-Ailey/project-04-fe/tree/legacy).*
 
 ![bootlegbills](https://i.imgur.com/X5cwrx5.png)
 
