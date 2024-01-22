@@ -93,6 +93,23 @@ const orderSchema = mongoose.Schema({
         type: String,
         lowercase: true,
         default: 'open'
+    },
+    mixForm: {
+        caseArt: {
+            type: String
+        },
+        artSideA: {
+            type: String
+        },
+        artSideB: {
+            type: String
+        },
+        shellColour: {
+            type: String
+        },
+        trackList: {
+            type: String
+        }
     }
 },
 {
